@@ -43,6 +43,15 @@
 - `vite-plugin-pwa` for installability and offline caching
 - Local component/state logic only; no backend
 
+## Deployment target
+
+- Host v1 on Cloudflare Pages.
+- Use the domain `tripos.justralph.it`.
+- Production deploys should happen automatically from the `main` branch.
+- Preview deployments for non-main branches are not required for v1.
+- Ralph is expected to perform the real Cloudflare setup and deployment when the required access is available.
+- Use the Cloudflare CLI for deployment-related setup and execution.
+
 ## Shared UI conventions
 
 - Show the board colors directly on the board.

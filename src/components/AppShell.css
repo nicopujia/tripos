@@ -1,0 +1,64 @@
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-nav {
+  padding: var(--spacing-md);
+  background-color: var(--color-bg-secondary);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.app-nav ul {
+  display: flex;
+  gap: var(--spacing-lg);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+}
+
+.app-nav a {
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  transition: background-color var(--motion-fast) ease,
+              color var(--motion-fast) ease;
+}
+
+.app-nav a:hover,
+.app-nav a:focus-visible {
+  background-color: var(--color-primary);
+  color: var(--color-text-inverse);
+}
+
+.app-nav a.active {
+  color: var(--color-primary);
+}
+
+.app-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xl);
+}
+
+@media (max-width: 480px) {
+  .app-nav ul {
+    gap: var(--spacing-sm);
+  }
+
+  .app-nav a {
+    padding: var(--spacing-xs);
+    font-size: 0.875rem;
+  }
+
+  .app-content {
+    padding: var(--spacing-md);
+  }
+}
